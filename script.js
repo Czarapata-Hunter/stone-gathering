@@ -19,7 +19,7 @@ const outOfHits = document.querySelector('.outOfHits');
 //pictures
 // const stackedWood = document.getElementById('stacked-wood');
 // const stackedWood2 = document.getElementById('stacked-wood2');
-// const stackedWood3 = document.getElementById('stacked-wood3');
+const goldOre = document.getElementById('gold-ore');
 // const stackedWood4 = document.getElementById('stacked-wood4');
 // const stackedWood5 = document.getElementById('stacked-wood5');
 // const markOfEnt = document.getElementById('markOfEnt');
@@ -49,7 +49,7 @@ const reset = () => {
 
   //   stackedWood.classList.add('hidden');
   //   stackedWood2.classList.add('hidden');
-  //   stackedWood3.classList.add('hidden');
+  goldOre.classList.add('hidden');
   //   stackedWood4.classList.add('hidden');
   //   stackedWood5.classList.add('hidden');
   //   markOfEnt.classList.add('hidden');
@@ -60,11 +60,11 @@ reset();
 
 // Need to make sure it displays correctly if 2 or more items are received
 const rare = [
-  'Mark of Ent',
-  'Ancient Resin',
-  'Heart of the Tree',
-  'Orphaned Baby Owl-Bear',
-  'Orphaned Baby Tree Ent',
+  'Iron Ore',
+  'Silver Ore',
+  'Gold Ore',
+  'Mithral Ore',
+  'Adamentine Ore',
 ];
 
 // const woodPictures = () => {
@@ -93,11 +93,11 @@ const rare = [
 //   }
 // };
 
-// const treeHeartPicture = () => {
-//   if (rewardsArray.includes('Heart of the Tree')) {
-//     treeHeart.classList.remove('hidden');
-//   }
-// };
+const goldOrePicture = () => {
+  if (rewardsArray.includes('Gold Ore')) {
+    goldOre.classList.remove('hidden');
+  }
+};
 
 btnReset.addEventListener('click', reset);
 
@@ -124,8 +124,8 @@ const closeRules = () => {
 const success = () => {
   hitCount++;
   hits.textContent = hitCount;
-  stone.textContent = woodCount;
-  //   woodPictures();
+  stone.textContent = stoneCount;
+  goldOrePicture();
   //   markOfEntPicture();
   //   treeHeartPicture();
   //   ancientResinPicture();

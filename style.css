@@ -1,0 +1,264 @@
+.header {
+  background-color: rgba(38, 38, 38, 0.649);
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  border-bottom: 3px solid;
+  border-color: #262626;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.2rem;
+}
+
+body {
+  margin: 0;
+  background-image: url('stoneBackground.jpg');
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  margin-left: 5rem;
+  margin: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-shadow: inset 0px 1px 0px 0px #0f0f0f;
+  background: linear-gradient(to bottom, #363635 5%, #777777 100%);
+  background-color: #5d5d5d;
+  border-radius: 6px;
+  border: 1px solid #242424;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.8rem;
+  padding: 18px 37px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5a5a5a;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #9e9e9e 5%, #424242 100%);
+  background-color: #585858;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+  box-shadow: 4px 4px 5px -1px rgba(48, 48, 48, 0.75) inset;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(85, 85, 85, 0.75) inset;
+  -moz-box-shadow: 4px 4px 5px -1px rgba(72, 72, 72, 0.75) inset;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+  background: linear-gradient(to bottom, #9e9e9e 5%, #2e2e2e 100%);
+  border-top: 1px;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.test {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.test img {
+  width: 25%;
+}
+
+.stats-block {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 40vh;
+
+  background: linear-gradient(to bottom, #000000 5%, #222222 100%);
+  border-top: 2px;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-left: 2px;
+  border-style: solid;
+  border-color: black;
+
+  color: white;
+}
+
+#stats-title {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  contain: content;
+}
+
+.statistics h3 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.preview {
+  display: flex;
+  flex-direction: row;
+  background-image: url('miningRoom.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid #000000;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 20px;
+}
+
+#stacked-wood2 {
+  width: 15%;
+  height: 22%;
+  z-index: 900;
+  position: relative;
+  top: 45%;
+  left: 20%;
+}
+
+#stacked-wood3 {
+  width: 15%;
+  height: 22%;
+  z-index: 800;
+  position: relative;
+  top: 45%;
+  left: 15%;
+}
+
+#gold-ore {
+  width: 15%;
+  height: 17%;
+  z-index: 1000;
+  position: relative;
+  top: 30%;
+  left: 30%;
+}
+
+#stacked-wood4 {
+  width: 15%;
+  height: 22%;
+  z-index: 1100;
+  position: relative;
+  top: 40%;
+  left: -16%;
+}
+
+#stacked-wood5 {
+  width: 15%;
+  height: 22%;
+  z-index: 1000;
+  position: relative;
+  top: 39%;
+  left: -21%;
+}
+
+#markOfEnt {
+  height: 10%;
+  width: 5%;
+  z-index: 600;
+  position: fixed;
+  top: 55%;
+  left: 80%;
+}
+
+#treeHeart {
+  height: 10%;
+  width: 5%;
+  z-index: 600;
+  position: fixed;
+  top: 61%;
+  left: 87%;
+}
+
+#ancientResin {
+  height: 10%;
+  width: 3%;
+  z-index: 1200;
+  position: fixed;
+  top: 59%;
+  left: 84%;
+}
+
+.hits-gone {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: black;
+  background-color: rgb(140, 0, 0);
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: white;
+
+  background: linear-gradient(to top left, #656565, #343434);
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-weight: bold;
+}
+
+.modal label {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
