@@ -146,76 +146,50 @@ h1 {
   border-radius: 20px;
 }
 
-#stacked-wood2 {
-  width: 15%;
-  height: 22%;
-  z-index: 900;
-  position: relative;
+#iron-ore {
+  width: 6%;
+  height: 8%;
+  z-index: 1000;
+  position: fixed;
   top: 45%;
-  left: 20%;
+  left: 67%;
 }
 
-#stacked-wood3 {
-  width: 15%;
-  height: 22%;
-  z-index: 800;
-  position: relative;
+#silver-ore {
+  width: 6%;
+  height: 8%;
+  z-index: 1000;
+  position: fixed;
   top: 45%;
-  left: 15%;
+  left: 74%;
 }
 
 #gold-ore {
-  width: 15%;
-  height: 17%;
+  width: 6%;
+  height: 10%;
   z-index: 1000;
-  position: relative;
-  top: 30%;
-  left: 30%;
+  position: fixed;
+  top: 44%;
+  left: 81%;
 }
 
-#stacked-wood4 {
-  width: 15%;
-  height: 22%;
-  z-index: 1100;
-  position: relative;
-  top: 40%;
-  left: -16%;
-}
-
-#stacked-wood5 {
-  width: 15%;
-  height: 22%;
+#mithral-ore {
+  width: 4%;
+  height: 10%;
   z-index: 1000;
-  position: relative;
-  top: 39%;
-  left: -21%;
+  position: fixed;
+  top: 51%;
+  left: 71%;
+  transform: rotate(-50deg);
 }
 
-#markOfEnt {
+#adamantine-ore {
+  width: 6%;
   height: 10%;
-  width: 5%;
-  z-index: 600;
+  z-index: 1000;
   position: fixed;
-  top: 55%;
-  left: 80%;
-}
-
-#treeHeart {
-  height: 10%;
-  width: 5%;
-  z-index: 600;
-  position: fixed;
-  top: 61%;
-  left: 87%;
-}
-
-#ancientResin {
-  height: 10%;
-  width: 3%;
-  z-index: 1200;
-  position: fixed;
-  top: 59%;
-  left: 84%;
+  top: 50%;
+  left: 77%;
 }
 
 .hits-gone {

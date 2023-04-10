@@ -17,14 +17,11 @@ const rewardItems = document.getElementById('rewardItems');
 const outOfHits = document.querySelector('.outOfHits');
 
 //pictures
-// const stackedWood = document.getElementById('stacked-wood');
-// const stackedWood2 = document.getElementById('stacked-wood2');
+const ironOre = document.getElementById('iron-ore');
+const silverOre = document.getElementById('silver-ore');
 const goldOre = document.getElementById('gold-ore');
-// const stackedWood4 = document.getElementById('stacked-wood4');
-// const stackedWood5 = document.getElementById('stacked-wood5');
-// const markOfEnt = document.getElementById('markOfEnt');
-// const ancientResin = document.getElementById('ancientResin');
-// const treeHeart = document.getElementById('treeHeart');
+const mithralOre = document.getElementById('mithral-ore');
+const adamantineOre = document.getElementById('adamantine-ore');
 
 // let hitCount = 0;
 // let failCount = 0;
@@ -47,14 +44,11 @@ const reset = () => {
   rewardItems.textContent = '???';
   outOfHits.classList.add('hidden');
 
-  //   stackedWood.classList.add('hidden');
-  //   stackedWood2.classList.add('hidden');
+  ironOre.classList.add('hidden');
+  silverOre.classList.add('hidden');
   goldOre.classList.add('hidden');
-  //   stackedWood4.classList.add('hidden');
-  //   stackedWood5.classList.add('hidden');
-  //   markOfEnt.classList.add('hidden');
-  //   treeHeart.classList.add('hidden');
-  //   ancientResin.classList.add('hidden');
+  mithralOre.classList.add('hidden');
+  adamantineOre.classList.add('hidden');
 };
 reset();
 
@@ -67,35 +61,33 @@ const rare = [
   'Adamentine Ore',
 ];
 
-// const woodPictures = () => {
-//   if (woodCount <= 30) {
-//     stackedWood.classList.remove('hidden');
-//   } else if (woodCount > 30 && woodCount <= 60) {
-//     stackedWood2.classList.remove('hidden');
-//   } else if (woodCount > 60 && woodCount <= 90) {
-//     stackedWood3.classList.remove('hidden');
-//   } else if (woodCount > 90 && woodCount <= 120) {
-//     stackedWood4.classList.remove('hidden');
-//   } else {
-//     stackedWood5.classList.remove('hidden');
-//   }
-// };
+const ironOrePicture = () => {
+  if (rewardsArray.includes('Iron Ore')) {
+    ironOre.classList.remove('hidden');
+  }
+};
 
-// const markOfEntPicture = () => {
-//   if (rewardsArray.includes('Mark of Ent')) {
-//     markOfEnt.classList.remove('hidden');
-//   }
-// };
-
-// const ancientResinPicture = () => {
-//   if (rewardsArray.includes('Ancient Resin')) {
-//     ancientResin.classList.remove('hidden');
-//   }
-// };
+const silverOrePicture = () => {
+  if (rewardsArray.includes('Silver Ore')) {
+    silverOre.classList.remove('hidden');
+  }
+};
 
 const goldOrePicture = () => {
   if (rewardsArray.includes('Gold Ore')) {
     goldOre.classList.remove('hidden');
+  }
+};
+
+const mithralOrePicture = () => {
+  if (rewardsArray.includes('Mithral Ore')) {
+    mithralOre.classList.remove('hidden');
+  }
+};
+
+const adamantineOrePicture = () => {
+  if (rewardsArray.includes('Adamantine Ore')) {
+    adamantineOre.classList.remove('hidden');
   }
 };
 
@@ -125,10 +117,11 @@ const success = () => {
   hitCount++;
   hits.textContent = hitCount;
   stone.textContent = stoneCount;
+  ironOrePicture();
+  silverOrePicture();
   goldOrePicture();
-  //   markOfEntPicture();
-  //   treeHeartPicture();
-  //   ancientResinPicture();
+  mithralOrePicture();
+  adamantineOrePicture();
 };
 
 const failing = () => {
